@@ -1,99 +1,176 @@
 body{
-    background-color:rgb(206, 225, 233);
+    background-color:rgb(223, 223, 253);
 }
 
 .container{
-    height:325px;
-    width:770px;
-    display:flex;
+    width:560px;
+    background-color:rgb(241, 241, 245);
+    box-sizing: border-box;
+    margin-left:15%;
+    margin-top:7%;
     border-radius:20px;
-    margin-left:22%;
-    margin-top:12.7%;
-    background-color: whitesmoke;
-}
+    display:grid;
+    grid-template-columns: 330px 200px;
+    grid-template-rows: 325px;
 
+}
 
 .image{
-    height:325px;
-    width:280px;
+    width:405px;
+    background-image: url(drawers.jpg);
+    background-position: left center;
+    background-size: cover;
     border-top-left-radius:20px;
     border-bottom-left-radius:20px;
 }
 
-.image img{
-    width:280px;
-    height:325px;
-    object-fit: fill;
-    border-top-left-radius:20px;
-    border-bottom-left-radius:20px;
-}
 
-.layer2{
+.contents{
+    background-color:rgb(255, 250, 250);
+    width:500px;
+    height:100%;
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
-    width:488px;
+    display:grid;
+    grid-template-rows: 0.1fr 0.3fr 1fr; 
+    padding:none;
+    margin:none;
 }
+
+
 
 .heading{
-    font-size: x-large;
-    color:rgb(56, 71, 109);
-    font-family:"Roboto", sans-serif;
-    font-weight: 500;
+    width:420px;
+    height:90px;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-size:large;
+    margin-top:20px;
     margin-left:40px;
+    letter-spacing:0px;
 }
 
-.content{
+.main{
+    width:420px;
+    height:110px;
+    margin-left:40px;
+    font-weight:bolder;
     font-size:medium;
-    font-weight:400;
-    font-family:"Roboto" , sans-serif;
-    color:rgb(56, 71, 109);
+    font-optical-sizing: auto;
+    font-family:"Noto Sans TC", sans-serif;
+    word-spacing: 5px;
+
+}
+
+.status{
+    width:420px;
+    display:grid;
+    grid-template-columns: 100px 150px 100px;
+    column-gap: 3px;
+    justify-content:start;
     margin-left:40px;
-    line-height: 22px;
 }
 
-.subcontainer{
-    height:55px;
-    display:flex;
-    margin-top:15px;
-    align-items:center;
+.avatar{
+    height:70px;
+    width:70px;
+    margin-right:40px;
 }
 
-.dp img{
-    height:55px;
-    width:55px;
+.avatar img{
+    height:70px;
+    width:70px;
     border-radius:100%;
-    margin-left:40px;
 }
 
 .info{
-    line-height: 5px;
-    font-family:"Roboto" , sans-serif;
-    letter-spacing:1px;
-    margin-left:15px;
-    color:rgb(56, 71, 109);
-}
-
-.info h4{
-    font-size:medium;
-
-}
-.info h5{
     font-size:small;
-    font-weight:400;
+    height:70px;
+    margin-left:-20px;
+    font-family:"Noto Sans TC", sans-serif;
+    font-size:bold;
+    display:grid;
+    grid-template-rows: 24px 20px;
 }
 
-.send{
-    height:30px;
-    width:30px;
-    border-radius:1000px;
-    margin-left:140px;
-    background-color: rgb(222, 227, 248);
-    display:flex;
+h3{
+    color:rgb(61, 61, 105);
+}
+
+h4{
+    color:rgba(172, 172, 238, 0.925);
+}
+
+h5{
+    color:rgb(106, 106, 148);
+}
+.share{
+    height:40px;
+    width:40px;
+    margin-left:130px;
+    border-radius:100%;
+    margin-top:15px;
+    background-color: rgb(214, 214, 226);
+}
+
+.share img{
+    height:20px;
+    width:20px;
+    align-items: center;
+    padding:10px;
+}
+
+
+.subcontainer{
+    display:grid;
+    justify-content:space-evenly;
+    height: 57px;
+    grid-template-columns: 100px 45px 45px 55px;
+    grid-area:"text square twitter pinterest";
     align-items:center;
-}
-.send img{
-    height:15px;
-    width:15px;
-    padding-left:8px;
+    background-color:rgb(68, 74, 117);
+    position:absolute;
+    left:861px;
+    bottom:335px;
+    border-radius:15px;
+    align-items:center;
+    opacity:0;
 }
 
+.subcontainer div{
+    height:max-height;
+    margin-top:1px;
+}
+
+
+.text{
+    margin-left:20px;
+    letter-spacing: 3px;
+    color: rgb(189, 189, 243);
+    
+}
+
+
+.square{
+    height:20px;
+    width:20px;
+    transform: rotate(45deg);
+    background-color:rgb(68, 74, 117);
+    margin-left:114px;
+    margin-bottom:89px;
+}
+
+.share:hover{
+    background-color:rgb(71, 76, 114);
+}
+.share:hover .subcontainer{
+    background-color:rgb(71, 76, 114);
+    opacity:1;
+}
+.share:hover img{
+    filter:brightness(30);
+}
+
+
+
+    
